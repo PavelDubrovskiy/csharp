@@ -1,0 +1,27 @@
+#See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
+
+FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
+WORKDIR /app
+EXPOSE 80
+EXPOSE 443
+
+FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
+WORKDIR /src
+COPY ["Mfc.Health.Corner.Api/Mfc.Health.Corner.Api.csproj", "Mfc.Health.Corner.Api/"]
+COPY ["Mfc.Health.Corner.Application/Mfc.Health.Corner.Application.csproj", "Mfc.Health.Corner.Application/"]
+COPY ["Mfc.Health.Corner.Persistence/Mfc.Health.Corner.Persistence.csproj", "Mfc.Health.Corner.Persistence/"]
+COPY ["Mfc.Health.Corner.Common/Mfc.Health.Corner.Common.csproj", "Mfc.Health.Corner.Common/"]
+COPY ["Mfc.Health.Corner.Domain/Mfc.Health.Corner.Domain.csproj", "Mfc.Health.Corner.Domain/"]
+RUN  -L https://api.nuget.org/v3/index.json
+RUN dotnet restore "Mfc.Health.Corner.Api/Mfc.Health.Corner.Api.csproj"
+COPY . .
+WORKDIR "/src/Mfc.Health.Corner.Api"
+RUN dotnet build "Mfc.Health.Corner.Api.csproj" -c Release -o /app/build
+
+FROM build AS publish
+RUN dotnet publish "Mfc.Health.Corner.Api.csproj" -c Release -o /app/publish
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "Mfc.Health.Corner.Api.dll"]

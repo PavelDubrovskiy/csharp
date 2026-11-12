@@ -1,0 +1,10 @@
+﻿{
+  "Login": "admin_1",
+  "Email": "admin@mail.ru",
+  "Password": "12345A",
+  "Active": "true",
+  "Blocked": "false",
+  "RoleNames": [
+    "SuperAdmin"
+  ]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "SegmentName": "CommonStart",
+    "HTMLSegment": "<table width=\"600\" style=\"display: inline-block;\"><tr><td style=\"width:100%;text-align:center;padding:0px;\">\t<div class=\"container\" style=\"padding: 0;border-bottom:5px solid #852f2f;\"><ul style=\"display: table; margin: 0; padding: 5px 0;\"><li style=\"display: table-cell; text-align: center;font-size: 28px; width:100px;\"><img class=\"logo40\" src=\"/i/logo-mdm.png\"></li><li style=\"display: table-cell; text-align: center;font-size: 28px;\"></li><li style=\"display: table-cell; text-align: center;font-size: 28px;\"></li></ul></div>\t<div class=\"container\" style=\" padding: 3px 0px 0px 0px; \"><table class=\"inbody-head\" style=\"border:0px;width:100%\" cellpadding=\"0\" cellspacing=\"0\"><tbody><tr><th width=\"150\">ID</th><th width=\"150\">Возраст</th><th width=\"150\">Пол</th><th width=\"150\"  style=\"border-right:none;\">Дата проверки</th></tr><tr><td> [InBodyId] </td><td> [age] </td><td> [gender] </td><td> [sdate] </td></tr></tbody></table></div>"
+  },
+  {
+    "SegmentName": "Bpbio",
+    "HTMLSegment": "<div class=\"container\" style=\" padding: 3px 0px 0px 0px; text-align:center\"><h2>Давление</h2><p>&nbsp;</p><p>&nbsp;</p><h3>Систолическое давление: [bpbiosystolic]</h3><h3>Диастолическое давление: [bpbiodiastolic]</h3><p>&nbsp;</p><p>&nbsp;</p><p style=\"text-align:left;\">Артериальное давление — один из важнейших параметров, характеризующих работу кровеносной системы.<br>Давление крови определяется объёмом крови, перекачиваемым в единицу времени сердцем и сопротивлением сосудистого русла.<br> Поскольку кровь движется под влиянием градиента давления в сосудах, создаваемого сердцем, то наибольшее давление крови <br>будет на выходе крови из сердца (в левом желудочке), несколько меньшее давление будет в артериях, ещё более низкое в капиллярах, <br>а самое низкое в венах и на входе сердца (в правом предсердии). Давление на выходе из сердца, в аорте и в крупных артериях <br>отличается незначительно (на 5—10 мм рт. ст.), поскольку из-за большого диаметра этих сосудов их гидродинамическое сопротивление невелико. <br>Точно так же незначительно отличается давление в крупных венах и в правом предсердии. Наибольшее падение давления крови происходит в мелких сосудах: артериолах, капиллярах и венулах.<br></p><p style=\"text-align:left\">Верхнее число — систолическое артериальное давление, показывает давление в артериях в момент, когда сердце сжимается <br>и выталкивает кровь в артерии, оно зависит от силы сокращения сердца, сопротивления, которое оказывают стенки кровеносных <br>сосудов, и числа сокращений в единицу времени.<br></p><p style=\"text-align:left\">Нижнее число — диастолическое артериальное давление, показывает давление в артериях в момент расслабления сердечной мышцы. <br>Это минимальное давление в артериях, оно отражает сопротивление периферических сосудов. По мере продвижения крови по сосудистому <br>руслу амплитуда колебаний давления крови спадает, венозное и капиллярное давление мало зависят от фазы сердечного цикла. <br></p></div><div class=\"pagebreak\"> </div>"
+  },
+  {
+    "SegmentName": "Analyzer",
+    "HTMLSegment": "<div class=\"container\" style=\" padding: 3px 0px 0px 0px; text-align:center\"><h2 class=\"st-center\">Анализ состава тела</h2></div><div class=\"pagebreak\"> </div>"
+  },
+  {
+    "SegmentName": "Pulse",
+    "HTMLSegment": "<div class=\"container\" style=\" padding: 3px 0px 0px 0px; text-align:center\"><h2>Пульсоксиметрия</h2><h3>Cатурация крови кислородом SpO<sub>2</sub>: [pulsespo2]</h3><p style=\"text-align:left\">SpO<sub>2</sub> показывает соотношение гемоглобина, содержащего кислород, к общему количеству гемоглобина в крови.<br>Сатурация всегда должна оставаться в пределах 95 – 100%. Если сатурация составляет 94% или ниже необходимо быстро обратиться к врачу. <br>Сатурация ниже 90% требует неотложной помощи.<br></p><h3>Частота пульса: ['pulse'] </h3><p style=\"text-align:left\">Брадикардия – вид аритмии, с частотой сердечных сокращений менее 60 ударов в минуту.<br></p><p style=\"text-align:left\">Тахикардия – вид аритмии, с частотой сердечных сокращений более 100 ударов в минуту.<br></p></div>"
+  },
+  {
+    "SegmentName": "Gaz",
+    "HTMLSegment": "<div class=\"container\" style=\" padding: 3px 0px 0px 0px; text-align:center\"><h2>Газоанализатор</h2><h3>Содержания карбоксигемоглобина<h3><h3>[gazppmco] млн<sup>-1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [gazcohb] % HbCO<h3></div>"
+  },
+  {
+    "SegmentName": "CommonEnd",
+    "HTMLSegment": "</td></tr></table>"
+  }
+]

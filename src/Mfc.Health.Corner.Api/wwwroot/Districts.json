@@ -1,0 +1,58 @@
+[
+  {
+    "Id": "61a795f5f50cec59fe4abe94",
+    "Name": "ВАО"
+  },
+  {
+    "Id": "61a795f5f50cec59fe4abe95",
+    "Name": "ЗАО"
+  },
+  {
+    "Id": "61a795f5f50cec59fe4abe96",
+    "Name": "ЗелАО"
+  },
+  {
+    "Id": "61a795f5f50cec59fe4abe97",
+    "Name": "САО"
+  },
+  {
+    "Id": "61a795f5f50cec59fe4abe98",
+    "Name": "СВАО"
+  },
+  {
+    "Id": "61a795f5f50cec59fe4abe99",
+    "Name": "СВАО"
+  },
+  {
+    "Id": "61a795f5f50cec59fe4abe9a",
+    "Name": "СЗАО"
+  },
+  {
+    "Id": "61a795f5f50cec59fe4abe9b",
+    "Name": "ЦАО"
+  },
+  {
+    "Id": "61a795f5f50cec59fe4abe9c",
+    "Name": "ЮВАО"
+  },
+  {
+    "Id": "61a795f5f50cec59fe4abe9d",
+    "Name": "ЮЗАО"
+  },
+  {
+    "Id": "61a795f5f50cec59fe4abe9e",
+    "Name": "ЮАО"
+  },
+  {
+    "Id": "61a795f5f50cec59fe4abe9f",
+    "Name": "Троицкий"
+  },
+  {
+    "Id": "61a795f5f50cec59fe4abea0",
+    "Name": "Новомосковский"
+  },
+  {
+    "id": "62600655256991d6dc4f1380",
+    "name": "ТиНАО"
+  }
+]

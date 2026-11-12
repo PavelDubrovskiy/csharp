@@ -1,0 +1,38 @@
+version: '3.4'
+
+services:
+  mfc.health.corner.api:
+    image: ${DOCKER_REGISTRY-}mfchealthcornerapi
+    build:
+      context: .
+      dockerfile: Mfc.Health.Corner.Api/Dockerfile
+    restart: always
+    ports:
+      - "44317:80"
+    networks:
+      - cluster-network
+    environment:
+      MongoDBConfig__Host: mongo
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo
+    restart: always
+    container_name: mongo 
+    networks:
+      - cluster-network
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: pass_wd_super_security_97865123
+    volumes:
+      - ./dbdata:/data/db
+    ports:
+      - 27017:27017
+
+networks:
+ cluster-network:
+  name: cluster-network
+  ipam:
+    config:
+       - subnet: 172.40.0.0/24
